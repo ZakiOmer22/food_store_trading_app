@@ -530,7 +530,7 @@ class _HomePageState extends State<HomePage> {
               },
               child: Icon(
                 isFavorite ? Icons.favorite : Icons.favorite_border,
-                color: isFavorite ? Colors.red : Colors.grey[600],
+                color: isFavorite ? Colors.green : Colors.grey[600],
               ),
             ),
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trading_app/models/cart_manager.dart';
+import 'package:trading_app/screens/pages/cart_page.dart';
 
 class ProductDetailPage extends StatefulWidget {
   const ProductDetailPage({super.key});
@@ -379,6 +380,10 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                             backgroundColor: kAccent,
                             duration: const Duration(seconds: 2),
                           ),
+                        );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => CartPage()),
                         );
                       },
                       child: const Text(
